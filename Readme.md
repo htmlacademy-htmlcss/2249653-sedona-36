@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Валерия Неретина](https://up.htmlacademy.ru/htmlcss/36/user/2249653).
-* Наставник: `Павел Нюкало`(https://htmlacademy.ru/profile/nyukalopavel).
+* Наставник: [Павел Нюкало](https://htmlacademy.ru/profile/nyukalopavel).
 
 ---
 
