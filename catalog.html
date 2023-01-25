@@ -58,9 +58,9 @@
             <a class="breadcrumbs-link">Гостиницы</a>
           </li>
         </ul>
+      <form class="filter-group" action="https://echo.htmlacademy.ru/" method="post">
         <fieldset class="inner-header-filter-group">
-          <form class="filter-group" action="https://echo.htmlacademy.ru/" method="post">
-            <legend class="inner-header-filter-group">Инфраструктура</legend>
+          <legend class="inner-header-filter-group">Инфраструктура</legend>
             <ul class="inner-header-filter-list">
               <li class="inner-header-filter-item">
                 <label class="control">
@@ -81,7 +81,6 @@
                 </label>
               </li>
             </ul>
-          </form>
         </fieldset>
         <fieldset class="inner-header-filter-group">
           <legend class="inner-header-filter-group">Тип жилья</legend>
@@ -102,12 +101,26 @@
               </label>
             </li>
           </ul>
-          <input type="text">
-          <button class="button" type="submit">Применить</button>
-          <input type="text">
-          <button class="button" type="submit">Сбросить</button>
         </fieldset>
-        <section class="inner-header-search">
+        <fieldset class="inner-header-cost-group">
+          <legend class="inner-header-cost-group">Стоимость, ₽:</legend>
+          <ul class="inner-header-cost-list">
+            <li class="inner-header-cost-from-item">
+              <label class="lable-cost-from" for="cost-from">
+                <input type="text" id="cost-from" name="cost-from" placeholder="от">
+              </label>
+            </li>
+            <li class="inner-header-cost-to-item">
+              <label class="lable-cost-to" for="cost-to">
+                <input type="text" id="cost-to" name="cost-to" placeholder="до">
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+          <button class="button" type="submit">Применить</button>
+          <button class="button" type="submit" type="reset">Сбросить</button>
+      </form>
+      <section class="inner-header-search">
           <h2 class="inner-header-search-title">Найдено гостиниц: 38</h2>
           <select class="select-control" aria-label="Сортировка">
             <option value="popular">Сначала дешевые</option>
