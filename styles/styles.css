@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("..\fonts\ptsans-400.woff2") format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,13 +10,174 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("..\fonts\ptsans-700.woff2") format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
+}
 
   body {
     font-family: "PT Sans", sans-serif;
-    font-size: 22px;
-    line-height: 26px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
     color: #333333;
     background: #FFFFFF;
+    text-align: center;
   }
+
+  /*Pages*/
+
+  .navigation-link { /*Почему то свойства не сработали по классу для страницы с катологом, хотя идентичен главной странице*/
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color:#000000;
+    text-decoration: none;
+    list-style: none;
+  }
+
+  .navigation-user {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color:#000000;
+    text-decoration: none;
+    list-style: none;
+  }
+
+  .navigation-button { /*Класс в .html был изменен, чтобы сделать шрифт белым*/
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color:#FFFFFF;
+    background: #756157;
+    text-transform: uppercase;
+  }
+
+.main-index {
+  background: #FFFFFF;
+  color: #000000;
+  background-image: url(/images/index-main-images/index-background.jpg);
+  background-repeat: no-repeat;
+
+}
+
+.reason {
+  background: #FFFFFF;
+  color: #000000;
+}
+
+.reason-description-heading {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.reason-description {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color:#000000;
+  }
+
+
+.advantages-list {
+  list-style: none;
+}
+.advantages-item {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color:#000000;
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item-town,
+.advantages-item-bridge {
+  color: #FFFFFF;
+  background: #82B3D3;
+}
+
+.advantages-item-road {
+  color:#000000;
+  background: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.service {
+  background: #FFFFFF;
+  color: #000000;
+}
+
+.service-description-heading {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.service-description {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color:#000000;
+  }
+  /*Не смогла добавить блоки жилье, еда, сувениры, т.к. из idex.html они были удалены на этапе предыдущей домашки. Я что-то не правильно полняла?*/
+
+  .interest {
+    background: #FFFFFF;
+    color: #000000;
+  }
+
+  .interest-description-heading {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+  }
+
+  .interest-description {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    color:#000000;
+    }
+
+    .button interest-button-search {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 36px;
+      color:#FFFFFF;
+      background: #756157;
+      text-transform: uppercase;
+    }
+
+    .subscribe {
+      background: #FFFFFF;
+      color: #000000;
+      background-image: url(/images/footer-images/form-index.jpg); /*Картинка почему-то не подсоединяется, а появляется серый фон*/
+      background-repeat: no-repeat;
+    }
+
+    .button-subscribe {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 36px;
+      color:#FFFFFF;
+      background: #82B3D3;
+      text-transform: uppercase;
+    }
+
+    .footer-social-item {
+      text-align: left;
+    }
+
+    .footer-website {
+      text-align: right;
+    }
