@@ -30,9 +30,15 @@ body {
   background: #ffffff;
 }
 
-.container {
-  margin: auto;
-  width: 1200px;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .navigation {
@@ -46,27 +52,33 @@ body {
 }
 
 .navigation-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 450px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.navigation-link {
+  display: block;
+  padding: 16px 20px;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   color: #000000;
   text-decoration: none;
-  /*Свойство отмены подчеркивания ссылки не сработало*/
-  list-style: none;
-  width: 450px;
-  margin-right: 285px;
-  padding: 0;
+
 }
 
 .navigation-user {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
-  color: #000000;
-  text-decoration: none;
-  list-style: none;
   width: 320px;
   margin-right: 70px;
+}
+
+.navigation-list navigation-user {
+  min-width: 20px;
+  min-height: 12px;
 }
 
 .navigation-button {
@@ -78,10 +90,6 @@ body {
   text-transform: uppercase;
 }
 
-.main-contaier {
-  flex-grow: 1;
-}
-
 .main-index {
   background: #ffffff;
   color: #000000;
@@ -89,13 +97,10 @@ body {
   background-repeat: no-repeat;
 }
 
-.page-container {
-  width: 1200px;
-  margin: 0 auto;
-}
-
 .hero {
   text-align: center;
+  height: 485px;
+  padding: 51px 371px 82px 371px;
 }
 
 .reason {
@@ -112,6 +117,8 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 25px;
 }
 
 .reason-description {
@@ -119,10 +126,13 @@ body {
   font-size: 22px;
   line-height: 26px;
   color: #000000;
+  margin: 0;
 }
 
 .advantages-item {
-  width: 400px;
+  display: flex;
+  max-width: 400px;
+  height: 385px;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -147,7 +157,16 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 32px;
+  text-align: center;
 }
+
+.advantages-description {
+  margin: 0;
+  text-align: center;
+}
+
 
 .service {
   margin: 0;
@@ -233,14 +252,7 @@ body {
   text-transform: uppercase;
 }
 
-.page-footer-container {
-  display: flex;
-  width: 1200px;
-  margin: 0 auto;
-  padding: 96px;
-}
-
-.subscription-container {
+.subscription {
   display: flex;
   width: 1200px;
   margin: 0 auto;
@@ -249,8 +261,6 @@ body {
   background-image: url("../images/footer-images/form-index.jpg");
   /*Конкретно эта картинка не подключается, только серый фон. Пробовала заменить на index-background.jpg - отобразилась нормально. Почему???*/
   background-repeat: no-repeat;
-  text-align: center;
-  /*Текст не центруется(*/
 }
 
 .subscribe-description {
@@ -258,6 +268,7 @@ body {
   font-size: 22px;
   line-height: 26px;
   color: #ffffff;
+  text-align: center;
 }
 
 .subscribe-title {
@@ -265,6 +276,7 @@ body {
   font-size: 30px;
   line-height: 36px;
   color: #ffffff;
+  text-align: center;
 }
 
 .button-subscribe {
@@ -274,12 +286,6 @@ body {
   color: #ffffff;
   background: #82b3d3;
   text-transform: uppercase;
-}
-
-.page-footer-container {
-  display: flex;
-  width: 1200px;
-  margin: 0 auto;
 }
 
 .footer-social-list {
@@ -305,7 +311,7 @@ body {
 }
 
 .inner-header {
-  display: flex;
+
   background: #000000;
   color: #ffffff;
   background-image: url("../images/catalog-main-images/form-main.jpg");
@@ -313,14 +319,38 @@ body {
   text-align: center;
 }
 
-/*.page-navigation {
-  display:;
-} Для следующей домашки*/
+.inner-header-title {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.breadcrumbs {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.breadcrumbs-item {
+  margin-right: 10px;
+}
+
+.sort {
+  display: flex;
+}
 
 .search-results {
-  display: flex;
-  margin: 0 auto;
-  width: 1060px;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.button button-light {
+  width: 48px;
+  height: 48px;
+  list-style-type: none;
 }
 
 .card-contaier {
@@ -368,11 +398,23 @@ body {
   background: #f2f2f2;
 }
 
-.pagination-container {
+.pagination {
   display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .pagination-link {
+  display: block;
+  box-sizing: border-box;
+  width: 48px;
+  height: 48px;
+  padding: 0;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
