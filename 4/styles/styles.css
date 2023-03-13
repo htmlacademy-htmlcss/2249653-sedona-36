@@ -127,17 +127,20 @@ body {
 }
 
 .navigation-number {
+  display: block;
   position: absolute;
   font-family: "PT Sans";
   font-weight: 400;
   font-size: 10px;
-  line-height: 10px;
-  background-size: 20px 20px;
+  line-height: 20px;
+  width: 20px;
+  height: 20px;
   color: #ffffff;
   background-color: #6c9e42;
   border-radius: 50%;
-  top: -3px;
-  right: -1px;
+  top: -10px;
+  right: -10px;
+  text-align: center;
 }
 
 .button-come {
@@ -360,8 +363,6 @@ body {
   text-transform: uppercase;
   margin: 0;
 }
-
-
 
 .sentence-title-home::before {
   display: block;
@@ -817,7 +818,7 @@ body {
   width: 20px;
   height: 20px;
   background: #ffffff;
-  border-color: #ffffff;
+  border: none;
   border-radius: 30%;
   cursor: pointer;
 
