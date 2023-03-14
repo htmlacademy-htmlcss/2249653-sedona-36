@@ -148,8 +148,8 @@ body {
 }
 
 .button-come-here {
-  font-famyly: "PT Sans"
-    font-weight: 700;
+  font-family: inherit;
+  font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
@@ -226,7 +226,6 @@ body {
 }
 
 .reason-description-heading {
-  font-family: "PT Sans";
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -237,7 +236,6 @@ body {
 
 .reason-description {
   font-weight: 400;
-  font-family: "PT Sans";
   font-size: 22px;
   line-height: 26px;
   color: #000000;
@@ -251,7 +249,6 @@ body {
 }
 
 .advantages-item {
-  font-family: "PT Sans";
   min-height: 385px;
   font-weight: 400;
   font-size: 18px;
@@ -279,7 +276,6 @@ body {
 }
 
 .advantages-title {
-  font-family: "PT Sans";
   font-weight: 700;
   font-size: 24px;
   position: relative;
@@ -462,7 +458,7 @@ body {
 }
 
 .interest-button-search {
-  font-family: "PT Sans";
+  font-family: inherit;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -549,11 +545,11 @@ body {
 }
 
 .subscribe-e-mail {
+  font-family: inherit;
   width: 452px;
   height: 52px;
   padding: 12px 20px;
   padding: 14px 345px 14px 14px;
-  font-family: "PT Sans";
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
@@ -564,7 +560,7 @@ body {
 }
 
 .button-subscribe {
-  font-family: "PT Sans";
+  font-family: inherit;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -800,11 +796,13 @@ body {
 }
 
 .range-from-field {
+  font-family: inherit;
   margin-right: 2px;
   border-radius: 4px 0 0 4px;
 }
 
 .range-to-field {
+  font-family: inherit;
   border-radius: 0 4px 4px 0;
 }
 
@@ -925,6 +923,10 @@ body {
   list-style-type: none;
 }
 
+.control-input {
+  font-family: inherit;
+}
+
 .inner-header-button {
   display: flex;
   flex-direction: column;
@@ -933,7 +935,7 @@ body {
 }
 
 .button-submit {
-  font-family: "PT Sans";
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -970,7 +972,7 @@ body {
 }
 
 .button-reset {
-  font-family: "PT Sans";
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
