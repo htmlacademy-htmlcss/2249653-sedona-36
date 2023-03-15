@@ -910,7 +910,7 @@ body {
 
 .inner-header-filter-group {
   padding: 0;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -1012,7 +1012,7 @@ body {
 .catalog-products-title {
   font-size: 30px;
   line-height: 36px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -1199,7 +1199,7 @@ body {
 .product-card-favorites {
   font-size: 16px;
   line-height: 20px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   color: #ffffff;
   background: #82b3d3;
@@ -1353,7 +1353,7 @@ body {
 .pagination-current {
   font-size: 20px;
   line-height: 36px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   color: #000000;
   background: #f2f2f2;
