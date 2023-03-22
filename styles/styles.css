@@ -732,7 +732,7 @@ img {
   display: block;
   padding-left: 130px;
   padding-right: 100px;
-  font-family: "PT Sans", sans-serif;
+  font-style: normal;
   font-size: 40px;
   line-height: 40px;
   font-weight: 400;
@@ -802,25 +802,25 @@ img {
   text-transform: uppercase;
 }
 
-.inner-header {
-  background: #ffffff;
+.wrapper-filter {
+  margin: 0 auto;
+  padding: 34px 70px 66px;
+  background-color: #82b3d3;
   color: #ffffff;
   background-image: url("../images/catalog-main-images/filter.jpg");
   background-repeat: no-repeat;
   align-items: stretch;
   background-size: cover;
-  max-height: 412px;
-}
-
-.page-navigation {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 40px;
+  margin: 0 auto;
+  padding: 34px 70px 42px;
 }
 
 .inner-header {
-  padding: 35px 70px 70px 70px;
+  width: 1060px;
+  min-height: 107px;
+  margin-bottom: 40px;
 }
+
 
 .inner-header-title {
   font-family: "PT Sans", sans-serif;
@@ -985,6 +985,12 @@ img {
   background-color: #3f5e72;
   border-radius: 50%;
   content: "";
+}
+
+.control-label {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
 }
 
 .control:hover {
@@ -1196,7 +1202,7 @@ img {
 
 .catalog-products {
   margin: 0;
-  padding: 50px 70px 0 70px;
+  padding: 51px 70px 0 70px;
 }
 
 .search-hotels {
@@ -1222,7 +1228,7 @@ img {
 
 .select-control {
   width: 292px;
-  margin-right: 70px;
+  margin-right: 60px;
   padding: 12px 20px;
   padding-right: 40px;
   font-family: inherit;
@@ -1257,8 +1263,9 @@ img {
 
 .view-buttons {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-end;
-  min-width: 160px;
+  width: 170px;
   min-height: 48px;
   list-style-type: none;
   padding: 0;
@@ -1339,7 +1346,9 @@ img {
   grid-template-columns: repeat(2, 140px);
   gap: 16px 20px;
   margin-top: auto;
+  align-items: center;
 }
+
 
 .product-card {
   display: flex;
@@ -1381,20 +1390,20 @@ img {
   background-color: #756157;
 }
 
-.product-card-detail:hover {
+.product-card-detail-button:hover {
   background-color: #615048;
 }
 
-.product-card-detail:focus {
+.product-card-detail-button:focus {
   background-color: #615048;
 }
 
-.product-card-detail:active {
+.product-card-detail-button:active {
   background-color: #756157;
   color: rgba(255, 255, 255, 0.3);
 }
 
-.product-card-detail:disabled {
+.product-card-detail-button:disabled {
   background-color: #e5e5e5;
 }
 
@@ -1405,20 +1414,20 @@ img {
   border: none;
 }
 
-.product-card-favorites:hover {
+.product-card-favorites-button:hover {
   background-color: #68a2Ca;
 }
 
-.product-card-favorites:focus {
+.product-card-favorites-button:focus {
   background-color: #68a2Ca;
 }
 
-.product-card-favorites:active {
+.product-card-favorites-button:active {
   background-color: #82b3d3;
   color: rgba(255, 255, 255, 0.3);
 }
 
-.product-card-favorites:disabled {
+.product-card-favorites-button:disabled {
   background-color: #e5e5e5;
 }
 
@@ -1431,20 +1440,20 @@ img {
 }
 
 
-.product-card-favorites-green:hover {
+.product-card-favorites-green-button:hover {
   background-color: #6c9e42;
 }
 
-.product-card-favorites-green:focus {
+.product-card-favorites-green-button:focus {
   background-color: #6c9e42;
 }
 
-.product-card-favorites-green:active {
+.product-card-favorites-green-button:active {
   background-color: #82b3d3;
   color: rgba(255, 255, 255, 0.3);
 }
 
-.product-card-favorites-green:disabled {
+.product-card-favorites-green-button:disabled {
   background-color: #e5e5e5;
 }
 
@@ -1592,6 +1601,7 @@ img {
 
 .modal-search {
   width: 717px;
+  top: 215px;
 }
 
 .modal-close-button {
@@ -1697,7 +1707,7 @@ img {
   background-color: #f2f2f2;
   border: 2px solid transparent;
   border-radius: 4px;
-  background-image: url("../images/index/date.svg");
+  background-image: url("../images/modal-images/date.svg");
   background-repeat: no-repeat;
   background-position: right 20px center;
   background-size: 20px 20px;
@@ -1750,7 +1760,7 @@ img {
   background-color: #f2f2f2;
   border: 2px solid transparent;
   border-radius: 4px;
-  background-image: url("../images/index/date.svg");
+  background-image: url("../images/modal-images/date.svg");
   background-repeat: no-repeat;
   background-position: right 20px center;
   background-size: 20px 20px;
@@ -1950,7 +1960,7 @@ img {
   padding: 0;
   background-color: transparent;
   border: none;
-  background-image: url("../images/index/tooltip.svg");
+  background-image: url("../images/modal-images/tooltip.svg");
   background-repeat: no-repeat;
   background-size: 26px 26px;
   cursor: pointer;
@@ -1984,7 +1994,7 @@ img {
   height: 9px;
   margin-left: auto;
   margin-right: auto;
-  background-image: url("../images/index/tooltip-arrow.svg");
+  background-image: url("../images/modal-images/tooltip-arrow.svg");
   background-size: 19px 9px;
   content: '';
 }
