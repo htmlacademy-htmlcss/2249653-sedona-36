@@ -1264,7 +1264,6 @@ img {
 .view-buttons {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
   width: 170px;
   min-height: 48px;
   list-style-type: none;
@@ -1273,7 +1272,7 @@ img {
 }
 
 .view-button-item {
-  margin-right: 8px;
+  margin: 4px;
 }
 
 .view-button {
